@@ -7,7 +7,9 @@ class EncryptHandler:
         self.selected_template = selected_template
 
     def encrypt_request_body(self, raw_request):
-        if "\n\n" in raw_request:
+        if "\r\n\r\n" in raw_request:
+            header_part, body_part = raw_request.split("\r\n\r\n", 1)
+        elif "\n\n" in raw_request:
             header_part, body_part = raw_request.split("\n\n", 1)
         else:
             return raw_request
