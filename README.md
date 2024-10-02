@@ -28,27 +28,27 @@ python .\JSReverse.py
    - 用加密参数的明文替换明文模板
    - 根据注释和实际需要，修改encrypt的加密逻辑和console.log的输出样式，最终输出符合原请求体格式的结果
 
-![image-20241002140020630](D:\MyCode\安全开发\JSReverse\imgs\README\image-20241002140020630.png)
+![image-20241002140020630](https://github.com/tianjy12/JSReverseTool/blob/main/imgs/README/image-20241002140020630.png)
 
 # 三. 使用示例
 
 1. 将完整的请求包复制到左侧，并选择JS模板，请求体中有data和crc两个参数，data为需要逆向的参数
 
-![image-20241002140951879](D:\MyCode\安全开发\JSReverse\imgs\README\image-20241002140951879.png)
+![image-20241002140951879](https://github.com/tianjy12/JSReverseTool/blob/main/imgs/README/image-20241002140951879.png)
 
 2. JS模板展示，这是手动调试分析出的data参数的明文，作为明文模板
 
-![image-20241002141208951](D:\MyCode\安全开发\JSReverse\imgs\README\image-20241002141208951.png)
+![image-20241002141208951](https://github.com/tianjy12/JSReverseTool/blob/main/imgs/README/image-20241002141208951.png)
 
 3. 点击解密，此时就会用明文模板替换请求体，可以对一些参数进行修改
 
-![image-20241002141345381](D:\MyCode\安全开发\JSReverse\imgs\README\image-20241002141345381.png)
+![image-20241002141345381](https://github.com/tianjy12/JSReverseTool/blob/main/imgs/README/image-20241002141345381.png)
 
 4. 点击加密，就会用目标网站的加密方法对修改后的请求体进行加密
 
-![image-20241002141535716](D:\MyCode\安全开发\JSReverse\imgs\README\image-20241002141535716.png)
+![image-20241002141535716](https://github.com/tianjy12/JSReverseTool/blob/main/imgs/README/image-20241002141535716.png)
 
 5. 点击Send就会进行放包，由于该网站进行了data和crc的双重验证，修改后服务器就会解密失败，不是该工具的功能问题
 
-![image-20241002141721091](D:\MyCode\安全开发\JSReverse\imgs\README\image-20241002141721091.png)
+![image-20241002141721091](https://github.com/tianjy12/JSReverseTool/blob/main/imgs/README/image-20241002141721091.png)
 
