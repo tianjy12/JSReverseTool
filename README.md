@@ -20,7 +20,7 @@ pip install -r .\requirements.txt
 python .\JSReverse.py
 ```
 
-![image-20241002135920417](D:\MyCode\安全开发\JSReverse\imgs\README\image-20241002135920417.png)
+![image-20241002135920417](https://github.com/tianjy12/JSReverseTool/blob/main/imgs/README/image-20241002135920417.png)
 
 4. 配置JS模板，JS模板的位置在script/JSTemplate/JSTemplate.js
    - 将JSTemplate.js文件复制到script目录下
